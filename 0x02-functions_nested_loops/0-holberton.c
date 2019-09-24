@@ -9,10 +9,10 @@ int main(void)
 	char cad[] = "Holberton\n";
 	unsigned int i;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 9; i++)
 	{
 		_putchar(cad[i]);
 	}
-
+	_putchar('\n');
 	return (0);
 }
