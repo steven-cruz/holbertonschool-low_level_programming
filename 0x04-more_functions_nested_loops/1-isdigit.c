@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * isdigit - checks for a digit
- * @c :integer to evalue
- * return: returns 1 if c is a digit other return 0
+ * _isdigit - Check if a character is a digit.
+ * @c: integer to evaluate
+ * Return: 1 if c is a digit, 0 otherwise.
  */
 
 int _isdigit(int c)
