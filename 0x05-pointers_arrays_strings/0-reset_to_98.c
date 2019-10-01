@@ -5,8 +5,3 @@
  * it points to to 98.
  * @n: Pointer to integer
  */
-
-void reset_to_98(int *n)
-{
-	*n = 98;
-}
