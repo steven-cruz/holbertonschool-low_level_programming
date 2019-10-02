@@ -5,6 +5,7 @@
  * @s:take a pointer, string.
  * Return:string
  */
+
 void print_rev(char *s)
 {
 	int i, j;
