@@ -1,11 +1,5 @@
 #include "holberton.h"
 
-/**
- * print_rev -  rints a string rev
- * @s:take a pointer, string.
- * Return:string
- */
-
 void print_rev(char *s)
 {
 	int i, j;
