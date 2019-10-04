@@ -6,16 +6,19 @@
  * Return:string
  */
 
-void print_rev(char *s)
+void reverse_array(int *a, int n)
 {
-	int i, j;
+	int size, tmp;
 
-	for (j = 0; s[j] != 0; j++)
+	size = 0;
+	n--;
+
+	while (size < n)
 	{
+		tmp = a[size];
+		a[size] = a[n];
+		a[n] = tmp;
+		size++;
+		n--;
 	}
-	for (i = j - 1; i >= 0; i--)
-	{
-		_putchar(s[i]);
-	}
-	_putchar('\n');
 }
