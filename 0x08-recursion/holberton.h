@@ -12,5 +12,7 @@ int is_prime_number(int n);
 int is_palindrome(char *s);
 int _fact(int n, int x);
 int prime(int n, int x);
+int pal(char *s, int c);
+int rec(char *s);
 
 #endif
