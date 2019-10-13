@@ -1,14 +1,19 @@
 #include <stdio.h>
 
-/**
- * main - Program that prints its name
- * @argc: Number of arguments (including name of file).
- * @argv: Arguments of the function
- * Return: Always 0.
- */
-int main(int argc __attribute__((unused)), char *argv[])
-{
-	printf("%s\n", argv[0]);
+ /**
+  * main - the programm that prints the name
+  * @argc: the number of arguments.
+  * @argv: the array that contains the arguments.
+  * Return: 0.
+  */
 
-	return (0);
+int main(int argc, char *argv[])
+{
+        int i = 0;
+
+        for (; i < argc; i++)
+
+		printf("%s\n", argv[i]);
+
+        return (0);
 }
