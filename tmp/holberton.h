@@ -32,7 +32,7 @@ int printHex(buf *toprint, unsigned int num);
 int printHEX(buf *toprint, unsigned int num);
 
 void sendbuf(buf *toprint, char c);
-char *createBuf(int size);
+char *createBuf(unsigned int size);
 void printBuffer(buf *toprint, int size);
 
 
