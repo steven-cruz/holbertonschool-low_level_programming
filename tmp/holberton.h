@@ -34,7 +34,7 @@ int printHex(buf *toprint, unsigned int num);
 int printHEX(buf *toprint, unsigned int num);
 
 void sendbuf(buf *toprint, char c);
-char *createBuf();
+buf *createBuf();
 void printBuffer(buf *toprint);
 
 

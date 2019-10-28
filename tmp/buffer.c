@@ -1,4 +1,4 @@
-#import "holberton.h"
+#include "holberton.h"
 
 /**
  * sendbuf - Send data to the buffer for future impress
@@ -25,10 +25,10 @@ buf *createBuf()
 	newBuffer->alm = malloc(1024);
 	if (!(newBuffer->alm))
 	{
-		free(newBuffer)
+		free(newBuffer);
 		exit(100);
 	}
-	return(ptr);
+	return(newBuffer);
 }
 
 
