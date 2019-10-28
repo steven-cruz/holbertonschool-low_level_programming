@@ -7,7 +7,10 @@
 #include <unistd.h>
 
 /**
- * 
+ * struct buffer - This structure define a buffer used to storage the
+ * characters to print in the standart output.
+ * @alm: pointer to the buffer.
+ * @pos: num of bytes used for the buffer.
  */
 typedef struct buffer
 {
@@ -29,7 +32,9 @@ int printHex(buf *toprint, unsigned int num);
 int printHEX(buf *toprint, unsigned int num);
 
 void sendbuf(buf *toprint, char c);
-char *createBuf();
+char *createBuf(int size);
+void printBuffer(buf *toprint, int size);
+
 
 
 
