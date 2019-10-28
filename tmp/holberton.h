@@ -18,7 +18,7 @@ typedef struct buffer
 int _printf(const char *format, ...);
 
 int conv(char *p, va_list lista);
-int printchar(buf *toprint, char c);
+int printChar(buf *toprint, char c);
 int printString(buf *toprint, char *s);
 int printInt(buf *toprint, int num);
 int printDec(buf *toprint, int num);
