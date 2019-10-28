@@ -1,3 +1,5 @@
+#import "holberton.h"
+
 /**
  * sendbuf - Send data to the buffer for future impress
  * @toprint: Pointer to the buffer to use
