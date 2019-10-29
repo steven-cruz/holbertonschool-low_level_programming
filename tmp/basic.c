@@ -1,4 +1,4 @@
-#include <holberton.h>
+#include "holberton.h"
 
 /**
  * printChar - send char to sendbuf.
@@ -22,10 +22,10 @@ int printString(buf *toprint, char *s)
 {
 	int i = 0;
 
-	if (toprint == NULL)
-		return (0);
+	if (s == NULL)
+		return (printString(toprint, "(null)"));
 
-	while (*toprint != '\0')
+	while (s[i] != '\0')
 	{
 		sendbuf(toprint, s[i]);
 		i++;

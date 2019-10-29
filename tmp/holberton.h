@@ -19,7 +19,7 @@ typedef struct buffer
 } buf;
 
 int _printf(const char *format, ...);
-int conv(char *p, va_list lista);
+int conv(buf *toprint, const char *p, va_list lista);
 
 int printChar(buf *toprint, char c);
 int printString(buf *toprint, char *s);

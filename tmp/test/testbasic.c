@@ -14,6 +14,7 @@ int main(void)
 
 	buf *c = createBuf();
 
+	_print("Hola, Holberton. Este es mi primer printf!!!");
 	len1 = printf("%s", s);
 	len2 = printString(c, s);
 	printf("%d %d", len1, len2);
