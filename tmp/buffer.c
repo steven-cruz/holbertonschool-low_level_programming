@@ -15,11 +15,12 @@ void sendbuf(buf *toprint, char c)
 
 /**
  * createBuf - Create a buffer of the size specificated
- * @size: Length of the buffer
+ * Return: pointer to a new boffer.
  */
 buf *createBuf()
 {
 	buf *newBuffer = malloc(sizeof(buf));
+
 	if (!newBuffer)
 		exit(100);
 	newBuffer->alm = malloc(1024);
@@ -28,7 +29,7 @@ buf *createBuf()
 		free(newBuffer);
 		exit(100);
 	}
-	return(newBuffer);
+	return (newBuffer);
 }
 
 

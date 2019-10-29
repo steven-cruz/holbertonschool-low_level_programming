@@ -24,7 +24,7 @@ int _printf(const char *format, ...)
 		{
 			va_copy(aux, list);
 			tmp = conv(toPrint, format + pos, aux);
-			if(tmp == -1)
+			if (tmp == -1)
 				return (-1);
 			printed += tmp;
 			va_end(aux);
