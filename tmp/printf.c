@@ -62,6 +62,20 @@ int conv(buf *toprint, const char *p, va_list lista)
 			return (printChar(toprint, va_arg(lista, int)));
 		case 's':
 			return (printString(toprint, va_arg(lista, char*)));
+		case 'd':
+		case 'i':
+		case 'b':
+		case 'u':
+		case 'o':
+		case 'x':
+		case 'X':
+		case 'S':
+		case 'p':
+		case 'l':
+		case 'h':
+		case 'r':
+		case 'R':
+			return (0);
 		case '%':
 			return (printChar(toprint, '%'));
 		case '\0':
