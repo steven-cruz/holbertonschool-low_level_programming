@@ -72,5 +72,6 @@ int conv(buf *toprint, const char *p, va_list lista)
 			printChar(toprint, *(p + 1));
 			return (2);
 	}
+	va_end(lista);
 	return (1);
 }
