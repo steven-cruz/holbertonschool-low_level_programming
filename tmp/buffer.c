@@ -41,3 +41,15 @@ void printBuffer(buf *toprint)
 	write(1, toprint->alm, toprint->pos);
 	toprint->pos = 0;
 }
+
+
+/**
+ * freeBuf - Frees the buffer
+ * @toPrint: pointer to struct buffer
+ */
+void freeBuf(buf *toPrint)
+{
+	free(toPrint->alm);
+	free(toPrint);
+}
+
