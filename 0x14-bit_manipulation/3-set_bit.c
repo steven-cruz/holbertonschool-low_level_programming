@@ -1,22 +1,16 @@
 #include "holberton.h"
-
 /**
- * clear_bit - function to clearbit
- * @n: unsigned  long int type
- * @index: index to clear
- * Return:  1 if successful or -1 if failed
+ * set_bit -  function to set value of bit at given index.
+ * @n: binary number given.
+ * @index: index  given.
+ * Return: 1 if successful or -1 if failed.
  */
-
-int clear_bit(unsigned long int *n, unsigned int index)
+int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int check = 1;
-	unsigned int size = sizeof(n) * 8;
-
-	if (*n == '\0')
-		return (-1);
-	if (index > size)
-		return (-1);
-	check <<= index;
-	*n &= ~check;
-	return (1);
+	if (index  < sizeof(n) *  8)
+	{
+		*n =  *n | (1 << index);
+		return (1);
+	}
+	return (-1);
 }
