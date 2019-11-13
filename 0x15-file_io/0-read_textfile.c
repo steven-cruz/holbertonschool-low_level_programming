@@ -4,7 +4,7 @@
  * read_textfile - read and write a file.
  * @filename: const char type pointer to be read.
  * @letters: size_t.
- * @Return: Always successful.
+ * Return: Always successful.
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
