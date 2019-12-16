@@ -1,8 +1,10 @@
 #include "lists.h"
 
 /**
- *
- *
+ * add_dnodeint - function to add node at the head
+ * @head: double pointer.
+ * @n: int of const.
+ * Return: double linked list
  */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
