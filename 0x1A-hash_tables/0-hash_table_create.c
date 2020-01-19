@@ -10,7 +10,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	unsigned long int c;
 	hash_table_t *table = NULL;
 
-        /* allocate memory for hash table*/
+	/* allocate memory for hash table*/
 	table = malloc(sizeof(hash_table_t));
 	if (table == NULL)
 		return (NULL);
@@ -21,7 +21,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (table->array == NULL)
 	{
 		free(table);
-		return(NULL);
+		return (NULL);
 	}
 	for (c = 0; c < size; c++)
 	{
